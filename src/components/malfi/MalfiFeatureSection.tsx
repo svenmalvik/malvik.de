@@ -1,29 +1,47 @@
-import { Home, TrendingUp, DollarSign, Shield } from "lucide-react";
+import { LayoutDashboard, Globe2, Calculator, Landmark, Users, WifiOff } from "lucide-react";
 
 const features = [
   {
-    icon: Home,
-    title: "Mortgage Planning",
-    description: "Calculate payments, compare scenarios, and plan refinancing. Make informed decisions about your biggest investment.",
+    icon: LayoutDashboard,
+    title: "Unified Wealth Dashboard",
+    description: "Track your total net worth at a glance. Malfi aggregates all your bank accounts, investment portfolios, and mortgages into one beautiful dashboard with real-time calculations in your preferred currency.",
     gradient: "from-primary/20 to-accent/20",
+    imagePlaceholder: "Dashboard showing net worth card, account summaries, and portfolio values",
   },
   {
-    icon: TrendingUp,
-    title: "Portfolio Tracking",
-    description: "Track stocks, crypto, and bank accounts in one place. Real-time updates from Coinbase and Stooq APIs.",
+    icon: Globe2,
+    title: "Global Investment Tracking",
+    description: "Monitor your portfolio across NYSE, NASDAQ, London, Frankfurt, Tokyo, and Warsaw exchanges. Track Bitcoin, Ethereum, Solana, and more—all with real-time pricing and automatic gain/loss calculations.",
     gradient: "from-accent/20 to-success/20",
+    imagePlaceholder: "Portfolio view showing stocks and crypto with gains/losses highlighted",
   },
   {
-    icon: DollarSign,
-    title: "Currency Exchange",
-    description: "Real-time NOK/EUR/USD conversion and rates. Perfect for international finances and travel planning.",
+    icon: Calculator,
+    title: "Intelligent Mortgage Planning",
+    description: "Compare annuity vs. serial loans, visualize complete amortization schedules, and see exactly how extra payments impact your mortgage. Perfect for planning your path to debt freedom.",
     gradient: "from-success/20 to-primary/20",
+    imagePlaceholder: "Mortgage calculator with amortization schedule",
   },
   {
-    icon: Shield,
-    title: "Privacy First",
-    description: "Local encrypted storage with SQLCipher. Offline-first design. Your financial data stays on your device.",
+    icon: Landmark,
+    title: "Bank Account Management",
+    description: "Track checking, savings, and tax-advantaged accounts. Monitor balances over time and see everything converted to your preferred currency.",
     gradient: "from-primary/20 to-accent/20",
+    imagePlaceholder: "Bank accounts list with different account types",
+  },
+  {
+    icon: Users,
+    title: "Partner Portfolio Sharing",
+    description: "Connect with your partner via iCloud to view shared financial data. Perfect for couples managing wealth together while maintaining individual privacy.",
+    gradient: "from-accent/20 to-success/20",
+    imagePlaceholder: "Partner view showing shared portfolios",
+  },
+  {
+    icon: WifiOff,
+    title: "Offline-First Architecture",
+    description: "All your data is cached locally with smart refresh logic. View your complete financial picture even without internet connection.",
+    gradient: "from-success/20 to-primary/20",
+    imagePlaceholder: "Offline indicator with cached data",
   },
 ];
 
@@ -36,13 +54,13 @@ const MalfiFeatureSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Everything You Need to<br />
+            See Your Complete{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Master Your Money
+              Financial Picture
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Built with Rust for security and SwiftUI for elegance
+            Powerful features designed for the discerning individual
           </p>
         </div>
 

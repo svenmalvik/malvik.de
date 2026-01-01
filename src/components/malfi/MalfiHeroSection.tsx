@@ -19,17 +19,20 @@ const MalfiHeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 border border-primary/20 shadow-glow">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Privacy-First Personal Finance</span>
+            <span className="text-sm font-medium text-foreground">Luxury Wealth Management for iOS</span>
           </div>
 
           {/* Main Headline */}
           <h2 className="text-6xl md:text-8xl font-black text-foreground mb-6 leading-tight tracking-tight">
-            Take Control of Your Finances
+            Your Wealth,{" "}
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Beautifully Organized
+            </span>
           </h2>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Smart budgeting, portfolio tracking, and mortgage planning for iOS. Know where every dollar goes.
+            Track stocks, crypto, mortgages, and bank accounts across multiple currencies. Private, secure, and elegantly designed for iOS.
           </p>
 
           {/* CTA Buttons */}
@@ -40,8 +43,34 @@ const MalfiHeroSection = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow"
             >
               <Apple className="mr-2 h-5 w-5" />
-              Download on App Store (Coming Soon)
+              Coming Soon to App Store
             </Button>
+          </div>
+
+          {/* Hero Image - iPhone mockup */}
+          <div className="mt-16 max-w-sm mx-auto">
+            <div className="relative">
+              {/* Dark mode screenshot - shown in dark theme */}
+              <div className="hidden dark:block rounded-[3rem] shadow-2xl overflow-hidden">
+                <img
+                  src="/malfi/malfi-dashboard-dark.png"
+                  alt="Malfi Dashboard - Dark Mode"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Light mode screenshot - shown in light theme */}
+              <div className="block dark:hidden rounded-[3rem] shadow-2xl overflow-hidden">
+                <img
+                  src="/malfi/malfi-dashboard-light.png"
+                  alt="Malfi Dashboard - Light Mode"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-primary/20 blur-3xl -z-10 scale-90"></div>
+            </div>
           </div>
 
           {/* Visual indicator */}

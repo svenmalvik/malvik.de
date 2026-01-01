@@ -14,10 +14,10 @@ const MalfiCTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Ready to Transform Your Finances?
+            Ready to Master Your Wealth?
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Malfi is coming soon to the App Store. Built with privacy and security at its core.
+            Experience luxury wealth management designed for the discerning individual. Private, secure, and elegantly crafted for iOS 17+.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -31,14 +31,20 @@ const MalfiCTASection = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/vissper"
-              className="inline-flex items-center gap-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors"
-            >
-              Learn more about Vissper
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+          {/* System requirements badge */}
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-primary-foreground/80">
+            <div className="inline-flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary-foreground/60"></span>
+              <span>iOS 17.0 or later</span>
+            </div>
+            <div className="inline-flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary-foreground/60"></span>
+              <span>iPhone optimized</span>
+            </div>
+            <div className="inline-flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary-foreground/60"></span>
+              <span>12+ languages supported</span>
+            </div>
           </div>
 
           {/* Footer info */}
