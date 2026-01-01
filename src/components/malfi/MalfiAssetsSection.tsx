@@ -12,7 +12,7 @@ const assetCategories = [
     icon: Coins,
     category: "Cryptocurrencies",
     details: "Bitcoin, Ethereum, Solana, and more",
-    updateFrequency: "5-minute updates via CoinGecko",
+    updateFrequency: "5-minute updates",
     gradient: "from-accent/20 to-success/20",
   },
   {
