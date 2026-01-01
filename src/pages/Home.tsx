@@ -94,6 +94,31 @@ const Home = () => {
                 </Button>
               </CardFooter>
             </Card>
+
+            {/* Trancefjord Card */}
+            <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+              <CardHeader>
+                <CardTitle className="text-3xl">Trancefjord</CardTitle>
+                <CardDescription className="text-base">
+                  Where Trance music meets Norwegian fjords. DJ sets exploring electronic soundscapes.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge>Trance</Badge>
+                  <Badge>Techno</Badge>
+                  <Badge>Live Streams</Badge>
+                  <Badge>DJ Sets</Badge>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild className="w-full">
+                  <Link to="/music">
+                    Explore Music <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </section>

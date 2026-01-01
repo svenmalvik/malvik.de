@@ -12,6 +12,7 @@ const Layout = () => {
     { path: "/", label: "Home" },
     { path: "/vissper", label: "Vissper" },
     { path: "/malfi", label: "Malfi" },
+    { path: "/music", label: "Music" },
   ];
 
   const isActive = (path: string) => {
@@ -32,18 +33,23 @@ const Layout = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`transition-colors ${
-                  isActive(item.path)
-                    ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
-                }`}
-              >
-                {item.label}
-              </Link>
+            {navItems.map((item, index) => (
+              <div key={item.path} className="flex items-center gap-6">
+                {/* Add separator before Music */}
+                {item.label === "Music" && (
+                  <div className="h-6 w-px bg-border"></div>
+                )}
+                <Link
+                  to={item.path}
+                  className={`transition-colors ${
+                    isActive(item.path)
+                      ? "text-primary font-semibold"
+                      : "text-foreground hover:text-primary"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </div>
             ))}
             <button
               onClick={toggle}
@@ -72,18 +78,24 @@ const Layout = () => {
               <SheetContent>
                 <nav className="flex flex-col gap-4 mt-6">
                   {navItems.map((item) => (
-                    <SheetClose asChild key={item.path}>
-                      <Link
-                        to={item.path}
-                        className={`text-lg transition-colors ${
-                          isActive(item.path)
-                            ? "text-primary font-semibold"
-                            : "text-foreground hover:text-primary"
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                    </SheetClose>
+                    <div key={item.path}>
+                      {/* Add separator before Music */}
+                      {item.label === "Music" && (
+                        <div className="h-px w-full bg-border my-3"></div>
+                      )}
+                      <SheetClose asChild>
+                        <Link
+                          to={item.path}
+                          className={`text-lg transition-colors ${
+                            isActive(item.path)
+                              ? "text-primary font-semibold"
+                              : "text-foreground hover:text-primary"
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      </SheetClose>
+                    </div>
                   ))}
                 </nav>
               </SheetContent>

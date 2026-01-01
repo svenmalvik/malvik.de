@@ -10,6 +10,7 @@ import MalfiLanding from "./pages/MalfiLanding";
 import MalfiPrivacy from "./pages/MalfiPrivacy";
 import MalfiSupport from "./pages/MalfiSupport";
 import MalfiTerms from "./pages/MalfiTerms";
+import MusicLanding from "./pages/MusicLanding";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import ThankYou from "./pages/ThankYou";
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/malfi/privacy" element={<MalfiPrivacy />} />
             <Route path="/malfi/support" element={<MalfiSupport />} />
             <Route path="/malfi/terms" element={<MalfiTerms />} />
+            <Route path="/music" element={<MusicLanding />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/thankyou" element={<ThankYou />} />
             <Route path="*" element={<NotFound />} />
