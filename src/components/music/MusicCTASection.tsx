@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 
 const MusicCTASection = () => {
   return (
-    <section className="py-32 relative overflow-hidden bg-gradient-to-br from-purple-600 via-pink-600 to-cyan-600">
+    <section className="py-32 relative overflow-hidden bg-gradient-to-br from-purple-600 via-indigo-600 to-cyan-600">
       {/* Background decoration - More vibrant and playful */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute top-20 left-20 w-96 h-96 bg-yellow-400 rounded-full blur-3xl animate-pulse"></div>
