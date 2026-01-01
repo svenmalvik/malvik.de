@@ -23,11 +23,11 @@ const MusicVideosSection = () => {
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             Episodes &{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">
               Live Streams
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent font-semibold max-w-2xl mx-auto">
             Journey through Trance and Techno soundscapes
           </p>
         </div>
@@ -50,17 +50,23 @@ const MusicVideosSection = () => {
                   className="block"
                 >
                   <div className="relative">
-                    {/* Hover glow effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    {/* Hover glow effect - More vibrant */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-pink-500/30 to-cyan-500/30 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     {/* Card */}
-                    <div className="relative glass border border-border rounded-3xl p-6 hover:border-primary/30 transition-all duration-300">
+                    <div className="relative glass border border-border rounded-3xl p-6 hover:border-purple-400/50 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 group-hover:scale-[1.02]">
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1 space-y-2">
                           {/* Type badge and date */}
                           <div className="flex items-center gap-2 flex-wrap">
-                            <Badge variant={video.type === 'live-stream' ? 'default' : 'secondary'}>
-                              <Icon className="h-3 w-3 mr-1" />
+                            <Badge
+                              variant={video.type === 'live-stream' ? 'default' : 'secondary'}
+                              className={video.type === 'live-stream'
+                                ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white border-0'
+                                : 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white border-0'
+                              }
+                            >
+                              <Icon className="h-3 w-3 mr-1 animate-pulse" />
                               {video.type === 'live-stream' ? 'Live Stream' : 'Video'}
                             </Badge>
                             <span className="text-sm text-muted-foreground">
@@ -69,7 +75,7 @@ const MusicVideosSection = () => {
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                          <h3 className="text-xl font-semibold text-foreground group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                             {video.title}
                           </h3>
 
@@ -82,7 +88,7 @@ const MusicVideosSection = () => {
                         </div>
 
                         {/* External link icon */}
-                        <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
+                        <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-purple-400 group-hover:scale-125 transition-all duration-300 flex-shrink-0 mt-1" />
                       </div>
                     </div>
                   </div>
