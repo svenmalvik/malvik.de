@@ -4,9 +4,9 @@ date: "2026-01-04"
 tags: ["AI", "Claude Code", "Productivity"]
 ---
 
-I finally paid attention to Claude Code's "Skills" feature that came out recently—maybe a month or two ago. I didn’t really understand Skills because, from what I read, it’s just a markdown file (or many markdown files, depending on the skill) explaining what it is, and then you can use those markdown files in your conversation.
+I finally paid attention to Claude Code's "Skills" feature that came out recently, maybe a month or two ago. I didn’t really understand Skills because, from what I read, it’s just a markdown file (or many markdown files, depending on the skill) explaining what it is, and then you can use those markdown files in your conversation.
 
-For me, that was obvious. Of course you can create markdown files and then inject them into your conversation. You can also share them with your team members. So I didn't really understand why you would need a dedicated feature for that. Even though people were praising Skills, I wasn't paying attention—I already knew context is everything, and I was already using markdown files with my prompts.
+For me, that was obvious. Of course you can create markdown files and then inject them into your conversation. You can also share them with your team members. So I didn't really understand why you would need a dedicated feature for that. Even though people were praising Skills, I wasn't paying attention. I already knew context is everything, and I was already using markdown files with my prompts.
 
 But now, for the first time, I tried Claude Code's Skills, and they blew me away, because I wasn't aware that those skills are injected automatically, without me doing anything. And those skills would be triggered depending on what the description in those skills is saying.
 

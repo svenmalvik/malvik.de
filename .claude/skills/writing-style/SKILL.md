@@ -144,8 +144,9 @@ When writing new content:
 6. Keep the conversational flow throughout
 
 When editing existing content:
-1. Check for authentic voice vs generic tone
-2. Ensure first-person perspective is maintained
-3. Add specific examples where content feels abstract
-4. Soften any lecturing or preachy passages
-5. Verify enthusiasm feels genuine, not forced
+1. **Search for all em dashes (—) first** - use grep or search to find every instance. Do not miss any. Replace with commas, periods, or colons depending on context
+2. Check for authentic voice vs generic tone
+3. Ensure first-person perspective is maintained
+4. Add specific examples where content feels abstract
+5. Soften any lecturing or preachy passages
+6. Verify enthusiasm feels genuine, not forced
