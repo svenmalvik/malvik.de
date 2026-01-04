@@ -1,7 +1,7 @@
 ---
 title: "Hello World: Welcome to My Blog"
 date: "2026-01-04"
-tags: ["Personal", "Meta"]
+tags: ["Personal"]
 ---
 
 Welcome to my new blog! This is where I'll share thoughts on AI, cloud architecture, software engineering, and my various projects.
