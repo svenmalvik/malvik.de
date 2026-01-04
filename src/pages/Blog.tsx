@@ -1,25 +1,25 @@
 import { useState, useMemo } from "react";
 import { Search } from "lucide-react";
-import { getRecentPosts } from "@/lib/blog";
+import { getAllPosts } from "@/lib/blog";
 import BlogLayout from "@/components/blog/BlogLayout";
 import BlogPostList from "@/components/blog/BlogPostList";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
 const Blog = () => {
-  const recentPosts = getRecentPosts(10);
+  const allPosts = getAllPosts();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   // Get unique tags from all posts
   const allTags = useMemo(() => {
     const tags = new Set<string>();
-    recentPosts.forEach((post) => post.tags.forEach((tag) => tags.add(tag)));
+    allPosts.forEach((post) => post.tags.forEach((tag) => tags.add(tag)));
     return Array.from(tags).sort();
-  }, [recentPosts]);
+  }, [allPosts]);
 
   const filteredPosts = useMemo(() => {
-    let posts = recentPosts;
+    let posts = allPosts;
 
     // Filter by selected tag
     if (selectedTag) {
@@ -38,7 +38,7 @@ const Blog = () => {
     }
 
     return posts;
-  }, [recentPosts, searchQuery, selectedTag]);
+  }, [allPosts, searchQuery, selectedTag]);
 
   return (
     <BlogLayout>
