@@ -44,3 +44,5 @@ Then I go into planning mode and say "plan for this feature." Claude Code now ha
 I was already happy with planning mode on its own. But combining it with a thorough interview beforehand? That's been a game changer for me.
 
 The lesson: I need to actually try features before dismissing them. Skills looked like marketing fluff until I understood the automatic injection. Now I can't imagine working without them.
+
+**Update**: [A reader](https://news.ycombinator.com/user?id=NitpickLawyer) pointed out something I missed: Skills work so well because Claude was specifically trained on them. The model already "knows" what Skills are, how to use them, and even how to write new ones. You don't need to teach it the concept. This explains why Skills feel so natural compared to other context injection approaches—it's not just a feature, it's baked into the model itself.
