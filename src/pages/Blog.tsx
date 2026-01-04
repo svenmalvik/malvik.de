@@ -23,7 +23,6 @@ const Blog = () => {
   return (
     <BlogLayout>
       <header className="mb-6">
-        <p className="text-sm text-primary font-medium mb-1">Learning in public</p>
         <h1 className="text-3xl font-bold text-foreground">Sven Malvik's Blog</h1>
         <p className="text-base text-muted-foreground mt-1">
           Thoughts on AI, cloud architecture, and software engineering.
