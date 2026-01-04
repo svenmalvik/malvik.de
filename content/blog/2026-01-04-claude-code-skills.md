@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Skills: From Skeptic to Believer"
+title: "I Was Wrong About Claude Code Skills"
 date: "2026-01-04"
 tags: ["AI", "Claude Code", "Productivity"]
 ---
