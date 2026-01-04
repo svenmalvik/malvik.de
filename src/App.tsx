@@ -15,6 +15,8 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import ThankYou from "./pages/ThankYou";
 import Download from "./pages/Download";
+import Blog from "./pages/Blog";
+import BlogArchive from "./pages/BlogArchive";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
             <Route path="/malfi/support" element={<MalfiSupport />} />
             <Route path="/malfi/terms" element={<MalfiTerms />} />
             <Route path="/music" element={<MusicLanding />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/archive" element={<BlogArchive />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/thankyou" element={<ThankYou />} />
             <Route path="*" element={<NotFound />} />

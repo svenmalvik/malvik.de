@@ -13,6 +13,7 @@ const Layout = () => {
     { path: "/vissper", label: "Vissper" },
     { path: "/malfi", label: "Malfi" },
     { path: "/music", label: "Music" },
+    { path: "/blog", label: "Blog" },
   ];
 
   const isActive = (path: string) => {
