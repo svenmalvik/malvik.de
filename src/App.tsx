@@ -17,6 +17,7 @@ import ThankYou from "./pages/ThankYou";
 import Download from "./pages/Download";
 import Blog from "./pages/Blog";
 import BlogArchive from "./pages/BlogArchive";
+import BlogPostPage from "./pages/BlogPostPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/music" element={<MusicLanding />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/archive" element={<BlogArchive />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/thankyou" element={<ThankYou />} />
             <Route path="*" element={<NotFound />} />

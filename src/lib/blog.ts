@@ -5,6 +5,7 @@ interface FrontMatterAttributes {
   title?: string;
   date?: string;
   tags?: string[];
+  excerpt?: string;
 }
 
 // Load all markdown files at build time
@@ -29,6 +30,7 @@ function parseMarkdownFile(filepath: string, content: string): BlogPost {
     tags: data.tags || [],
     slug,
     content: markdownContent,
+    excerpt: data.excerpt,
   };
 }
 
@@ -43,6 +45,10 @@ export function getAllPosts(): BlogPost[] {
 
 export function getRecentPosts(count: number = 10): BlogPost[] {
   return getAllPosts().slice(0, count);
+}
+
+export function getPostBySlug(slug: string): BlogPost | undefined {
+  return getAllPosts().find((post) => post.slug === slug);
 }
 
 export function getPostsByYear(year: number): BlogPost[] {

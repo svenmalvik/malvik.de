@@ -4,6 +4,7 @@ export interface BlogPost {
   tags: string[];
   slug: string;
   content: string;
+  excerpt?: string;
 }
 
 export interface ArchiveYear {
