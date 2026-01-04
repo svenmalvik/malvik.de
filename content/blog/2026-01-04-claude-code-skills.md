@@ -29,17 +29,17 @@ project, or system they want to build. Use the AskUserQuestion tool to
 systematically gather requirements...
 ```
 
-The description is the key. Claude Code reads it and decides whether to inject the skill based on what I'm asking for. So when I say "interview me about this feature," it matches the description and suddenly my entire interview process—all 300+ lines of it—gets added to the context automatically.
+The description is the key. Claude Code reads it and decides whether to inject the skill based on what I'm asking for. So when I say "interview me about this feature," it matches the description and suddenly my entire interview process, all 300+ lines of it, gets added to the context automatically.
 
 I've built a few skills over the past weeks, but two have become essential to my workflow.
 
-**Git**: All my Git operations are now automated. I say "git push all" or "resolve my Git issues," and the [Git skill](https://github.com/svenmalvik/malvik.de/blob/main/.claude/skills/git/SKILL.md) handles everything—staging, committing with proper messages, pushing, even resolving conflicts. It saves me significant time and hassle.
+**Git**: All my Git operations are now automated. I say "git push all" or "resolve my Git issues," and the [Git skill](https://github.com/svenmalvik/malvik.de/blob/main/.claude/skills/git/SKILL.md) handles everything: staging, committing with proper messages, pushing, even resolving conflicts. It saves me a lot of time and hassle.
 
-**Interviewer**: This one changed how I approach new features. I say "interview me about this document" and the [Interview skill](https://github.com/svenmalvik/malvik.de/blob/main/.claude/skills/interview/SKILL.md) takes over. It uses the `AskUserQuestion` tool (the same one you see in planning mode) to systematically probe my requirements—asking 2-4 questions at a time, then moving to related topics, then drilling deeper.
+**Interviewer**: This one changed how I approach new features. I say "interview me about this document" and the [Interview skill](https://github.com/svenmalvik/malvik.de/blob/main/.claude/skills/interview/SKILL.md) takes over. It uses the `AskUserQuestion` tool (the same one you see in planning mode) to systematically probe my requirements, asking 2-4 questions at a time, then moving to related topics, then drilling deeper.
 
 By the end, I've answered 20-40 questions depending on the project scope. The skill captures everything in a structured markdown file.
 
-Then I go into planning mode and say "plan for this feature." Claude Code now has all the context it needs—the original document plus dozens of clarifying Q&As. The plans it generates are far more accurate than before.
+Then I go into planning mode and say "plan for this feature." Claude Code now has all the context it needs: the original document plus dozens of clarifying Q&As. The plans it generates are far more accurate than before.
 
 I was already happy with planning mode on its own. But combining it with a thorough interview beforehand? That's been a game changer for me.
 

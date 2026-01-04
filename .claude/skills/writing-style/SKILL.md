@@ -7,6 +7,24 @@ description: This skill should be used when the user asks to write blog posts, a
 
 When writing or editing content for Sven, follow this style guide to maintain his authentic voice.
 
+## Titles
+
+### Style
+- Use first-person perspective: "I Was Wrong About...", "Why I Finally...", "What I Learned..."
+- Keep them humble and honest, not clickbait
+- Avoid colons and subtitles. Simple, direct statements work better
+- Make the title a genuine admission or observation, not a claim of expertise
+
+### Good Examples
+- "I Was Wrong About Claude Code Skills"
+- "The Feature I Almost Ignored"
+- "What I Misunderstood About Planning Mode"
+
+### Avoid
+- "The Ultimate Guide to..." (too authoritative)
+- "X: A Complete Overview" (too formal, uses colon)
+- "How to Master..." (implies expertise over discovery)
+
 ## Core Tone
 
 ### Personal and Conversational
@@ -34,8 +52,26 @@ When writing or editing content for Sven, follow this style guide to maintain hi
 - Include parenthetical asides and reflections
 - Transition naturally: "So today...", "But now...", "And the other skill..."
 
+### Short Paragraphs
+- Keep paragraphs to 2-4 sentences maximum
+- One idea per paragraph
+- Let white space create breathing room
+- Dense walls of text feel academic, not conversational
+
+### Rhetorical Questions
+- Ask questions and answer them immediately
+- "So what does a skill actually look like? It's surprisingly simple."
+- Creates natural pacing and anticipation
+- Mimics how we explain things in conversation
+
+### Specific Numbers
+- Use concrete numbers when relevant: "300+ lines", "20-40 questions", "2-4 questions at a time"
+- Specificity adds credibility and helps readers visualize
+- Avoid vague quantifiers like "many" or "several" when you know the actual number
+
 ### Numbering and Lists
 - Use natural verbal numbering: "The first one is...", "And the other skill..."
+- Use **bold** for key terms being introduced or emphasized
 - Avoid rigid bullet points in flowing narrative sections
 - When lists are needed, keep them conversational
 
@@ -55,6 +91,7 @@ When writing or editing content for Sven, follow this style guide to maintain hi
 
 ## What to Avoid
 
+- Em dashes (—). Use periods or commas instead
 - Academic or formal tone
 - Passive voice when active is more natural
 - Generic advice without personal experience
@@ -77,6 +114,25 @@ When writing or editing content for Sven, follow this style guide to maintain hi
 ### Good: Specific Examples
 "I just say 'git push all,' or 'resolve my Git issues,' or whatever I want to do with Git, and my Git skill would then be invoked and it would do its job."
 
+### Good: Rhetorical Question
+"So what does a skill actually look like? It's surprisingly simple."
+
+### Good: Clear Ending
+"The lesson: I need to actually try features before dismissing them. Skills looked like marketing fluff until I understood the automatic injection."
+
+## Structure
+
+### Opening
+- Start with a personal hook or immediate context
+- Jump right into the story. No preamble or "In this post, I will..."
+- First sentence should set the scene: "I finally paid attention to..."
+
+### Ending
+- Close with a clear, direct lesson or takeaway
+- Use "The lesson:" or similar framing to signal the conclusion
+- Keep it to 1-2 sentences
+- Example: "The lesson: I need to actually try features before dismissing them."
+
 ## Application
 
 When writing new content:
@@ -84,7 +140,7 @@ When writing new content:
 2. Share the journey, including initial doubts or confusion
 3. Use specific examples from real experience
 4. Express genuine reactions to discoveries
-5. End with a takeaway or lesson learned
+5. End with a clear takeaway prefixed by "The lesson:" or similar
 6. Keep the conversational flow throughout
 
 When editing existing content:
