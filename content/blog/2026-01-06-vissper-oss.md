@@ -1,5 +1,7 @@
 ---
 title: "I Built Vissper Three Times Before Getting It Right"
+date: "2026-01-06"
+tags: ["AI", "Vissper", "Open Source"]
 ---
 
 Ever since generative AI came out and people started talking about agents, I kept thinking about what it would be like to have an AI meeting companion. Someone that listens to your meetings, gives input, creates summaries and action points, highlights the main ideas, and maybe takes screenshots when something important is on screen. A real companion that acts like an actual contributor. How great would that be?

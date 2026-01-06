@@ -133,6 +133,23 @@ When writing or editing content for Sven, follow this style guide to maintain hi
 - Keep it to 1-2 sentences
 - Example: "The lesson: I need to actually try features before dismissing them."
 
+## Blog Post Frontmatter
+
+Every blog post requires proper YAML frontmatter. Missing fields will break the blog page.
+
+```yaml
+---
+title: "I Built Vissper Three Times Before Getting It Right"
+date: "2026-01-06"
+tags: ["AI", "Vissper", "Open Source"]
+---
+```
+
+Required fields:
+- **title**: The post title in quotes
+- **date**: Publication date in "YYYY-MM-DD" format (must match filename date)
+- **tags**: Array of relevant tags like "AI", "Claude Code", "Productivity", "Open Source"
+
 ## Application
 
 When writing new content:
