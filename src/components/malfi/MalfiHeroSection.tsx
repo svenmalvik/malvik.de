@@ -37,14 +37,15 @@ const MalfiHeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button
-              size="lg"
-              disabled
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow"
-            >
-              <Apple className="mr-2 h-5 w-5" />
-              Coming Soon to App Store
-            </Button>
+            <a href="https://apps.apple.com/no/app/malfi/id6757203817" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow"
+              >
+                <Apple className="mr-2 h-5 w-5" />
+                Download on App Store
+              </Button>
+            </a>
           </div>
 
           {/* Hero Image - iPhone mockup */}

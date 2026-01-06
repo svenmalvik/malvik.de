@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Download } from "lucide-react";
+import { Apple, Building2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const FooterCTA = () => {
   return (
@@ -19,13 +20,22 @@ const FooterCTA = () => {
             Download Vissper Cloud and start capturing insights from your meetings today. Free to get started.
           </p>
 
-          <Link
-            to="/vissper/download"
-            className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/90 transition-all hover:scale-105 shadow-lg"
-          >
-            <Download className="h-5 w-5" />
-            Download for Mac
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              disabled
+              size="lg"
+              className="bg-white text-primary px-8 py-7 rounded-full text-lg font-semibold shadow-lg"
+            >
+              <Apple className="mr-2 h-5 w-5" />
+              Download for macOS (Coming Soon)
+            </Button>
+            <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-7 text-lg border-white/40 text-primary-foreground hover:bg-white/10">
+              <a href="https://www.linkedin.com/in/svenmalvik/" target="_blank" rel="noopener noreferrer">
+                <Building2 className="mr-2 h-5 w-5" />
+                Enterprise? Contact Sven
+              </a>
+            </Button>
+          </div>
 
           {/* Footer info */}
           <div className="border-t border-white/20 pt-10 mt-16">

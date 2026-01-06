@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Download } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowRight, Sparkles, Apple, Shield, HardDrive, Building2, Github } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -34,16 +33,52 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/vissper/download">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow hover:shadow-xl transition-all hover:scale-105 group"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download for macOS
+          <div className="flex flex-col items-center gap-6">
+            <Button
+              disabled
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow"
+            >
+              <Apple className="mr-2 h-5 w-5" />
+              Download for macOS (Coming Soon)
+            </Button>
+            <span className="text-sm text-muted-foreground">Version 0.3.2 • macOS 12.0+</span>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-6 text-base border-border/60">
+                <a href="https://github.com/svenmalvik/vissper-oss" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-5 w-5" />
+                  View on GitHub
+                </a>
               </Button>
-            </Link>
+              <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-6 text-base border-border/60">
+                <a href="https://www.linkedin.com/in/svenmalvik/" target="_blank" rel="noopener noreferrer">
+                  <Building2 className="mr-2 h-5 w-5" />
+                  Enterprise? Contact Sven
+                </a>
+              </Button>
+            </div>
+          </div>
+
+          {/* Feature highlights */}
+          <div className="pt-8 grid gap-6 sm:grid-cols-2 max-w-xl mx-auto text-left">
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-card/50 border border-border/40">
+              <Shield className="h-5 w-5 text-primary mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-sm">Secure & Private</h3>
+                <p className="text-sm text-muted-foreground">Your data stays on your device</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-card/50 border border-border/40">
+              <HardDrive className="h-5 w-5 text-primary mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-sm">Easy Installation</h3>
+                <p className="text-sm text-muted-foreground">Drag and drop to Applications</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Explore Features button */}
+          <div className="pt-4">
             <a href="#comparison">
               <Button
                 size="lg"

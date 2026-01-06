@@ -21,14 +21,15 @@ const MalfiCTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button
-              disabled
-              size="lg"
-              className="bg-white text-primary px-8 py-7 rounded-full text-lg font-semibold shadow-lg"
-            >
-              <Apple className="mr-2 h-5 w-5" />
-              Download on App Store (Coming Soon)
-            </Button>
+            <a href="https://apps.apple.com/no/app/malfi/id6757203817" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-white text-primary px-8 py-7 rounded-full text-lg font-semibold shadow-lg hover:bg-white/90"
+              >
+                <Apple className="mr-2 h-5 w-5" />
+                Download on App Store
+              </Button>
+            </a>
           </div>
 
           {/* System requirements badge */}

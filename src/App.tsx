@@ -14,7 +14,6 @@ import MusicLanding from "./pages/MusicLanding";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import ThankYou from "./pages/ThankYou";
-import Download from "./pages/Download";
 import Blog from "./pages/Blog";
 import BlogArchive from "./pages/BlogArchive";
 import BlogPostPage from "./pages/BlogPostPage";
@@ -33,7 +32,6 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/vissper" element={<VissperLanding />} />
-            <Route path="/vissper/download" element={<Download />} />
             <Route path="/malfi" element={<MalfiLanding />} />
             <Route path="/malfi/privacy" element={<MalfiPrivacy />} />
             <Route path="/malfi/support" element={<MalfiSupport />} />
