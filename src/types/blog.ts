@@ -5,6 +5,7 @@ export interface BlogPost {
   slug: string;
   content: string;
   excerpt?: string;
+  noLink?: boolean;
 }
 
 export interface ArchiveYear {

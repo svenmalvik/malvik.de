@@ -6,6 +6,7 @@ interface FrontMatterAttributes {
   date?: string;
   tags?: string[];
   excerpt?: string;
+  noLink?: boolean;
 }
 
 // Load all markdown files at build time
@@ -31,6 +32,7 @@ function parseMarkdownFile(filepath: string, content: string): BlogPost {
     slug,
     content: markdownContent,
     excerpt: data.excerpt,
+    noLink: data.noLink,
   };
 }
 
