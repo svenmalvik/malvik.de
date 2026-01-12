@@ -1,6 +1,6 @@
 ---
 title: "Stillness"
-date: "2026-01-11"
+date: "2026-01-10"
 tags: ["Thoughts"]
 noLink: true
 ---
