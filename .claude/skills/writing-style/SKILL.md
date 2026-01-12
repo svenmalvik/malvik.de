@@ -89,6 +89,14 @@ When writing or editing content for Sven, follow this style guide to maintain hi
 - Use specific, concrete examples over abstractions
 - Say what you mean without hedging excessively
 
+## Grammar and Polish
+
+- Fix all grammar errors, typos, and punctuation issues
+- Tighten overly chatty passages. Keep the conversational tone but remove filler words and redundant phrases
+- Replace casual verbal tics ("like", "you know", "basically") with cleaner alternatives
+- Ensure subject-verb agreement and consistent tense throughout
+- A slightly more polished voice still sounds personal. Subtle edits go a long way
+
 ## What to Avoid
 
 - Em dashes (—). Use periods or commas instead
@@ -99,6 +107,7 @@ When writing or editing content for Sven, follow this style guide to maintain hi
 - Excessive hedging or qualifications
 - Marketing-speak or buzzwords
 - Unnecessary jargon when simple words work
+- Run-on sentences that meander without clear direction
 
 ## Example Patterns
 
