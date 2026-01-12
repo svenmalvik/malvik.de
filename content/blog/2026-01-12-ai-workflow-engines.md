@@ -1,6 +1,6 @@
 ---
 title: "I Gave Up on No-Code Workflow Engines"
-date: "2026-01-12"
+date: "2026-01-11"
 tags: ["AI", "Productivity", "Claude Code", "Automation"]
 ---
 
