@@ -95,10 +95,10 @@ const Home = () => {
               </CardFooter>
             </Card>
 
-            {/* MCarousel Card */}
+            {/* InSlide Card */}
             <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
               <CardHeader>
-                <CardTitle className="text-3xl">MCarousel</CardTitle>
+                <CardTitle className="text-3xl">InSlide</CardTitle>
                 <CardDescription className="text-base">
                   Turn Markdown into beautiful LinkedIn carousels with professional themes
                 </CardDescription>
