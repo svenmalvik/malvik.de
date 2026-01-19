@@ -12,6 +12,7 @@ const Layout = () => {
     { path: "/", label: "Home" },
     { path: "/vissper", label: "Vissper" },
     { path: "/malfi", label: "Malfi" },
+    { path: "https://carousel.malvik.de", label: "MCarousel", external: true },
     { path: "/music", label: "Music" },
     { path: "/blog", label: "Blog" },
   ];
@@ -34,22 +35,33 @@ const Layout = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <div key={item.path} className="flex items-center gap-6">
                 {/* Add separator before Music */}
                 {item.label === "Music" && (
                   <div className="h-6 w-px bg-border"></div>
                 )}
-                <Link
-                  to={item.path}
-                  className={`transition-colors ${
-                    isActive(item.path)
-                      ? "text-primary font-semibold"
-                      : "text-foreground hover:text-primary"
-                  }`}
-                >
-                  {item.label}
-                </Link>
+                {item.external ? (
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.path}
+                    className={`transition-colors ${
+                      isActive(item.path)
+                        ? "text-primary font-semibold"
+                        : "text-foreground hover:text-primary"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </div>
             ))}
             <button
@@ -85,16 +97,27 @@ const Layout = () => {
                         <div className="h-px w-full bg-border my-3"></div>
                       )}
                       <SheetClose asChild>
-                        <Link
-                          to={item.path}
-                          className={`text-lg transition-colors ${
-                            isActive(item.path)
-                              ? "text-primary font-semibold"
-                              : "text-foreground hover:text-primary"
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
+                        {item.external ? (
+                          <a
+                            href={item.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-lg text-foreground hover:text-primary transition-colors"
+                          >
+                            {item.label}
+                          </a>
+                        ) : (
+                          <Link
+                            to={item.path}
+                            className={`text-lg transition-colors ${
+                              isActive(item.path)
+                                ? "text-primary font-semibold"
+                                : "text-foreground hover:text-primary"
+                            }`}
+                          >
+                            {item.label}
+                          </Link>
+                        )}
                       </SheetClose>
                     </div>
                   ))}

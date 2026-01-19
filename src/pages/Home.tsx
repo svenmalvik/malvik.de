@@ -43,7 +43,7 @@ const Home = () => {
       <section id="projects" className="py-32 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-20 animate-fade-in">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Vissper Card */}
             <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up">
               <CardHeader>
@@ -91,6 +91,31 @@ const Home = () => {
                   <Link to="/malfi">
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* MCarousel Card */}
+            <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+              <CardHeader>
+                <CardTitle className="text-3xl">MCarousel</CardTitle>
+                <CardDescription className="text-base">
+                  Turn Markdown into beautiful LinkedIn carousels with professional themes
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge>React</Badge>
+                  <Badge>TypeScript</Badge>
+                  <Badge>LinkedIn</Badge>
+                  <Badge>PDF</Badge>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild className="w-full">
+                  <a href="https://carousel.malvik.de" target="_blank" rel="noopener noreferrer">
+                    Try It Free <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
