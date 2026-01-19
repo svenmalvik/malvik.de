@@ -34,4 +34,6 @@ I'm very biased because I really enjoy Claude Code. When I hear people praise Gi
 
 I was really hoping to finish a complete project with GitHub Copilot. Instead, I spent a lot of time for basically nothing. I would have loved to go more in depth, but I'm mentally not able to when the coding assistant can't even do the small things.
 
+I'm fully aware that I don't know what I don't know. Maybe I missed something obvious. Maybe there's a workflow I didn't discover. But I spent an hour, achieved nothing useful, and left disappointed. It's as simple as that.
+
 The lesson: features on paper and features in practice are two different things. I'll check back in six months.
