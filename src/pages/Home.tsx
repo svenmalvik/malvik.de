@@ -113,7 +113,7 @@ const Home = () => {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full">
-                  <a href="https://carousel.malvik.de" target="_blank" rel="noopener noreferrer">
+                  <a href="https://inslide.malvik.de" target="_blank" rel="noopener noreferrer">
                     Try It Free <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>

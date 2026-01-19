@@ -12,7 +12,7 @@ const Layout = () => {
     { path: "/", label: "Home" },
     { path: "/vissper", label: "Vissper" },
     { path: "/malfi", label: "Malfi" },
-    { path: "https://carousel.malvik.de", label: "InSlide", external: true },
+    { path: "https://inslide.malvik.de", label: "InSlide", external: true },
     { path: "/music", label: "Music" },
     { path: "/blog", label: "Blog" },
   ];
