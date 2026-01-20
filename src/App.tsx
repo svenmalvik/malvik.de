@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import VissperLanding from "./pages/VissperLanding";
 import MalfiLanding from "./pages/MalfiLanding";
+import BrainrLanding from "./pages/BrainrLanding";
 import MalfiPrivacy from "./pages/MalfiPrivacy";
 import MalfiSupport from "./pages/MalfiSupport";
 import MalfiTerms from "./pages/MalfiTerms";
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/malfi/privacy" element={<MalfiPrivacy />} />
             <Route path="/malfi/support" element={<MalfiSupport />} />
             <Route path="/malfi/terms" element={<MalfiTerms />} />
+            <Route path="/brainr" element={<BrainrLanding />} />
             <Route path="/music" element={<MusicLanding />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/archive" element={<BlogArchive />} />

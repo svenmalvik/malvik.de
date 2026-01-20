@@ -95,8 +95,34 @@ const Home = () => {
               </CardFooter>
             </Card>
 
-            {/* InSlide Card */}
+            {/* Brainr Card */}
             <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+              <CardHeader>
+                <CardTitle className="text-3xl">Brainr</CardTitle>
+                <CardDescription className="text-base">
+                  Capture thoughts in Slack, organize knowledge in Notion with AI-powered intent classification
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge>AI</Badge>
+                  <Badge>Node.js</Badge>
+                  <Badge>TypeScript</Badge>
+                  <Badge>Slack</Badge>
+                  <Badge>Notion</Badge>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild className="w-full">
+                  <Link to="/brainr">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* InSlide Card */}
+            <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
               <CardHeader>
                 <CardTitle className="text-3xl">InSlide</CardTitle>
                 <CardDescription className="text-base">
